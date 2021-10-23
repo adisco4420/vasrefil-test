@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { SplashScreen } from '@capacitor/splash-screen';
 
 @Component({
   selector: 'app-root',
@@ -12,11 +11,14 @@ export class AppComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    SplashScreen.show({
-      showDuration: 2000,
-      autoHide: true,
-    
-    });
+    this.autoLightMode();
+  }
+
+  autoLightMode() {
+    // Use matchMedia to check the user preference
+    const prefersDark = window.matchMedia('(prefers-color-scheme: light)');
+    document.body.classList.add('light');
+
   }
 
 }

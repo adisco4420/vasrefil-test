@@ -24,3 +24,81 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+ion-content.primary {
+    --background: #00AEEF;
+}
+// Display Utils
+.d-flex {display: flex;}
+.justify-content-between{justify-content: space-between;}
+.text-muted {color: #B5B5B5;}
+.text-link{
+    color: #00AEEF;
+    text-decoration: none;
+}
+
+.mt-1 {margin-top: 1em;}
+.mt-2 {margin-top: 1.5em;}
+.mt-3 {margin-top: 2em;}
+.mt-4 {margin-top: 2.5em;}
+.mt-5 {margin-top: 3em;}
+
+
+
+
+.box-border-rounded {
+    background: #FFFFFF;
+    border-radius: 16px 16px 0px 0px;
+    min-height: 100%;
+    // position:absolute;
+    bottom: 0;
+    width: 100%;
+    // overflow: auto;
+}
+.fs-24-bold{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+}
+.fs-14 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+.btn-pry {
+    --background: #00AEEF;
+    --padding-top: 25px;
+    --padding-bottom: 25px;
+    --border-radius: 8px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.input-pry {
+    // --padding: 12px;
+    --border-width: 1px;
+    --border-radius: 8px;
+    --border-color: #D7D7D7;
+    --inner-padding-start: 10px; 
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    .label {
+        color: #B5B5B5;
+        font-weight: normal;
+        // font-size: 1.2em;
+        // line-height: 170%;        
+    }
+    ion-input {
+        font-style: normal; 
+        font-weight: 600;
+        // font-size: 1;
+        // line-height: 170%;
+    }
+}

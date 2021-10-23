@@ -11,7 +11,7 @@ import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 export class SplashPage implements OnInit {
   constructor(private router: Router) {
     setTimeout(() => {
-      this.router.navigate(['/home/tabs/tab1']);
+      this.router.navigate(['/sign-up']);
     }, 3000);
    }
 
